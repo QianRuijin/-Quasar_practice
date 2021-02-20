@@ -1,10 +1,35 @@
+import Cimdr from '../pages/Cimdr'
+import CimdrLayout from '../layouts/CimdrLayout'
+import Register from '../pages/Register'
+import ForgetPWD from '../pages/ForgetPWD'
 
 const routes = [
+  // {
+  //   path: '/',
+  //   component: () => import('layouts/MainLayout.vue'),
+  //   children: [
+  //     { path: '', component: () => import('pages/Index.vue') }
+  //   ]
+  // },
   {
     path: '/',
-    component: () => import('layouts/MainLayout.vue'),
+    name: 'Cimdr',
+    component: Cimdr
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: CimdrLayout,
     children: [
-      { path: '', component: () => import('pages/Index.vue') }
+      { path: '', component: Register }
+    ]
+  },
+  {
+    path: '/forgetPWD',
+    name: 'ForgetPWD',
+    component: CimdrLayout,
+    children: [
+      { path: '', component: ForgetPWD }
     ]
   },
 

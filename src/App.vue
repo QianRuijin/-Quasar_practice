@@ -1,5 +1,5 @@
 <template>
-  <div id="q-app">
+  <div id="q-app" class="wrap">
     <router-view />
   </div>
 </template>
@@ -8,3 +8,9 @@ export default {
   name: 'App'
 }
 </script>
+
+<style scoped>
+  .wrap {
+    min-width: 1200px;
+  }
+</style>
