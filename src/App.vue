@@ -8,9 +8,3 @@ export default {
   name: 'App'
 }
 </script>
-
-<style scoped>
-  .wrap {
-    min-width: 1200px;
-  }
-</style>

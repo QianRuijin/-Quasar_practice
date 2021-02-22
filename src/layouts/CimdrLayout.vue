@@ -1,7 +1,13 @@
 <template>
-  <q-layout view="hHh lpR fFf" class="layout-wrap">
+  <q-layout view="hhh lpR fff" class="layout-wrap">
     <q-header elevated class="header row justify-center" height-hint="98">
       <q-img class="header-img" src="http://www.cimdr.com/cimdr/static/img/banner.0c450fe.jpeg"></q-img>
+
+      <q-tabs align="left">
+        <q-route-tab to="/page1" label="Page One" />
+        <q-route-tab to="/page2" label="Page Two" />
+        <q-route-tab to="/page3" label="Page Three" />
+      </q-tabs>
     </q-header>
 
     <q-page-container>

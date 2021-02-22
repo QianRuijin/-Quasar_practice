@@ -14,7 +14,10 @@ const routes = [
   {
     path: '/',
     name: 'Cimdr',
-    component: Cimdr
+    component: CimdrLayout,
+    children: [
+      { path: '', component: Cimdr }
+    ]
   },
   {
     path: '/register',
