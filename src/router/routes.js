@@ -1,5 +1,6 @@
 import Cimdr from '../pages/Cimdr'
 import CimdrLayout from '../layouts/CimdrLayout'
+import SimpleLayout from '../layouts/SimpleLayout'
 import Register from '../pages/Register'
 import ForgetPWD from '../pages/ForgetPWD'
 
@@ -22,7 +23,7 @@ const routes = [
   {
     path: '/register',
     name: 'Register',
-    component: CimdrLayout,
+    component: SimpleLayout,
     children: [
       { path: '', component: Register }
     ]
@@ -30,7 +31,7 @@ const routes = [
   {
     path: '/forgetPWD',
     name: 'ForgetPWD',
-    component: CimdrLayout,
+    component: SimpleLayout,
     children: [
       { path: '', component: ForgetPWD }
     ]
