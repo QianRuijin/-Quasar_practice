@@ -29,14 +29,29 @@
 </template>
 
 <script>
-// import CimdrLogin from '../components/Login'
 export default {
   name: 'Detail',
-  components: {
-    // CimdrLogin
-  },
   data () {
     return {
+    }
+  },
+  mounted () {
+    this.loadData()
+  },
+  methods: {
+    loadData () {
+      this.$axios.post('/api/con/info/get')
+        .then((response) => {
+          this.data = response.data
+        })
+        .catch(() => {
+          this.$q.notify({
+            color: 'negative',
+            position: 'top',
+            message: 'Loading failed',
+            icon: 'report_problem'
+          })
+        })
     }
   }
 }

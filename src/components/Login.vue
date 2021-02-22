@@ -32,6 +32,11 @@ export default {
       account: '',
       pwd: ''
     }
+  },
+  methods: {
+    onSubmit () {
+      console.log('submit')
+    }
   }
 }
 </script>

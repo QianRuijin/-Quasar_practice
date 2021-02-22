@@ -77,7 +77,16 @@ module.exports = function (/* ctx */) {
     devServer: {
       https: false,
       port: 8080,
-      open: true // opens browser window automatically
+      open: true, // opens browser window automatically
+      proxy: {
+        '/api': {
+          // target: 'http://www.cimdr.com/medapp/api',
+          target: '123.57.233.107:80',
+          pathRewrite: {
+            '^/api': '/api'
+          }
+        }
+      }
     },
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-framework

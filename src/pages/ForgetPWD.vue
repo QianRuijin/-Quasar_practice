@@ -3,7 +3,7 @@
     <div class="wrap">
       <div class="row justify-between rwgister-header">
         <div>用户注册</div>
-        <a href="/">返回首页 》</a>
+        <router-link to="/">返回首页 》</router-link>
       </div>
 
       <div class="row justify-center q-mb-sm">
@@ -61,7 +61,7 @@
           </template>
         </q-input>
         <!-- 提交按钮 -->
-        <div class="row justify-center q-mt-lg">
+        <div class="row justify-center q-mt-lg q-mb-xl">
           <q-btn label="提交" type="submit" class="commitBtn"/>
         </div>
     </q-form>
@@ -80,6 +80,11 @@ export default {
       verification: '',
       pwd: '',
       pwdConfirm: ''
+    }
+  },
+  methods: {
+    onSubmit () {
+      console.log('submit')
     }
   }
 }

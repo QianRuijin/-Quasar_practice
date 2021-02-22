@@ -3,7 +3,7 @@
     <div class="wrap">
       <div class="row justify-between rwgister-header">
         <div>用户注册</div>
-        <a href="/">返回首页 》</a>
+        <router-link to="/">返回首页 》</router-link>
       </div>
 
       <q-form @submit="onSubmit" class="column content-center input-wrap">
@@ -148,7 +148,7 @@
           </q-input>
         </div>
         <!-- 提交按钮 -->
-        <div class="row justify-center q-mt-lg">
+        <div class="row justify-center q-mt-lg q-mb-xl">
           <q-btn label="提交" type="submit" class="commitBtn"/>
         </div>
     </q-form>
@@ -211,6 +211,27 @@ export default {
         '台湾省',
         '香港特别行政区',
         '澳门特别行政区']
+    }
+  },
+  computed: {
+    cityOptions () {
+      let city = []
+      switch (this.province) {
+        case '北京市':
+          city = ['东城区', '西城区', '崇文区', '宣武区', '朝阳区', '丰台区', '石景山区', '海淀区', '门头沟区', '房山区', '通州区', '顺义区', '昌平区', '大兴区', '怀柔区', '平谷区', '密云县', '延庆县', '延庆镇']
+          break
+        case '上海市':
+          city = ['静安区', '宝山区']
+          break
+        default:
+          city = ['无匹配数据']
+      }
+      return city
+    }
+  },
+  methods: {
+    onSubmit () {
+      console.log('submit')
     }
   }
 }
