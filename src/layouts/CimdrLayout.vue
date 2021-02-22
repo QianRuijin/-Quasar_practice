@@ -5,14 +5,14 @@
 
       <q-tabs class="tabs" align="left">
         <q-route-tab to="/" label="首页" />
-        <q-route-tab to="/page2" label="关于CIMDR" />
-        <q-route-tab to="/page3" label="2020CIMDR"/>
-        <q-route-tab to="/page3" label="新闻动态"/>
-        <q-route-tab to="/page3" label="资料下载"/>
-        <q-route-tab to="/page3" label="往期回顾"/>
-        <q-route-tab to="/page3" label="联系我们"/>
-        <q-route-tab to="/page3" label="平行会议"/>
-        <q-route-tab to="/page3" label="疫情防控须知"/>
+        <q-route-tab to="/detail?" label="关于CIMDR" />
+        <q-route-tab to="/detail?" label="2020CIMDR"/>
+        <q-route-tab to="/detail?" label="新闻动态"/>
+        <q-route-tab to="/detail?" label="资料下载"/>
+        <q-route-tab to="/detail?" label="往期回顾"/>
+        <q-route-tab to="/detail?" label="联系我们"/>
+        <q-route-tab to="/detail?" label="平行会议"/>
+        <q-route-tab to="/detail?" label="疫情防控须知"/>
       </q-tabs>
     </q-header>
 

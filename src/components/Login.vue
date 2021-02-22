@@ -15,8 +15,8 @@
           </template>
         </q-input>
         <div class="row justify-between">
-          <a href="/#/register" class="link">用户注册</a>
-          <a href="/#/forgetPWD" class="link">忘记密码</a>
+          <router-link to="/register" class="link">用户注册</router-link>
+          <router-link to="/forgetPWD" class="link">忘记密码</router-link>
         </div>
         <q-btn class="btn" label="登录" type="submit"/>
       </q-form>
