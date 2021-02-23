@@ -4,6 +4,7 @@ import SimpleLayout from '../layouts/SimpleLayout'
 import Detail from '../pages/Detail'
 import Register from '../pages/Register'
 import ForgetPWD from '../pages/ForgetPWD'
+// import Test from '../pages/test2'
 
 const routes = [
   // {
@@ -41,7 +42,10 @@ const routes = [
       { path: '', component: ForgetPWD }
     ]
   },
-
+  // {
+  //   path: '/test',
+  //   component: Test
+  // },
   // Always leave this as last one,
   // but you can also remove it
   {
