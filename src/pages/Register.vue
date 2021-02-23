@@ -1,6 +1,6 @@
 <template>
   <q-page class="row justify-center">
-    <div class="wrap">
+    <div class="wrapbox">
       <div class="row justify-between rwgister-header">
         <div>用户注册</div>
         <router-link to="/">返回首页 》</router-link>
@@ -238,7 +238,7 @@ export default {
 </script>
 
 <style scoped>
-.wrap {
+.wrapbox {
   width: 900px;
 }
 
