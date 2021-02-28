@@ -96,6 +96,7 @@ module.exports = function (/* ctx */) {
       //     }
       // }
     },
+    animations: 'all',
 
     // https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-framework
     framework: {

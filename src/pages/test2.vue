@@ -28,6 +28,11 @@ export default {
         slidesPerView: 3,
         spaceBetween: 30,
         direction: 'horizontal',
+        autoplay: {
+          disableOnInteraction: false,
+          delay: 1000
+        },
+        loop: true,
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
@@ -48,17 +53,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  @import './base.scss';
+  // @import './base.scss';
 
-  @media (max-width: $container-width) {
-    .swiper-button-next {
-      right: 20px;
-      transform: rotate(90deg);
-    }
+  // @media (max-width: $container-width) {
+  //   .swiper-button-next {
+  //     right: 20px;
+  //     transform: rotate(90deg);
+  //   }
 
-    .swiper-button-prev {
-      left: 20px;
-      transform: rotate(90deg);
-    }
-  }
+  //   .swiper-button-prev {
+  //     left: 20px;
+  //     transform: rotate(90deg);
+  //   }
+  // }
 </style>

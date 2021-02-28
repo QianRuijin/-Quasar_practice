@@ -1,5 +1,5 @@
 <template>
-  <div class="wrap row justify-center">
+  <div class="wrap row justify-center q-pb-xl q-mb-xl">
     <div class="row">
       <div class="content-wrap">
         <item-title :title="'新闻动态'"></item-title>
