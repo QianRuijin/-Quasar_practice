@@ -5,7 +5,7 @@ import Detail from '../pages/Detail'
 import Register from '../pages/Register'
 import ForgetPWD from '../pages/ForgetPWD'
 import Test from '../pages/test'
-import Test2 from '../pages/test3'
+import Test2 from '../pages/test4'
 
 const routes = [
   // {

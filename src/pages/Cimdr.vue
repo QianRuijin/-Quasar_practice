@@ -42,7 +42,24 @@
         </div>
       </div>
     </div>
-    <div class="carousel-wrap q-my-lg"></div>
+    <div class="carousel-wrap q-my-lg">
+      <vue-seamless-scroll :data="listData" :class-option="optionLeft" class="seamless-warp">
+        <ul class="item row">
+          <li class="scroll-li" v-for="(item, index) in listData" :key="index">
+            <div>
+              <img class="scroll-img" :src="item.url" />
+            </div>
+          </li>
+        </ul>
+      </vue-seamless-scroll>
+    </div>
+    <!-- <div class="carousel-wrap q-my-lg">
+      <vue-seamless-scroll :data="listData" :class-option="optionLeft" class="seamless-warp">
+        <div class="item row">
+          <q-img class="scroll-img" v-for="(item, index) in listData" :key="index" :src="item.url"> </q-img>
+        </div>
+      </vue-seamless-scroll>
+    </div> -->
   </div>
 </template>
 
@@ -61,7 +78,19 @@ export default {
       firstNew: {},
       newsList: [],
       docList: [],
-      historyList: []
+      historyList: [],
+      listData: [
+        { url: 'http://www.cimdr.com/cimdr/static/img/img2.00ef986.jpg' },
+        { url: 'http://www.cimdr.com/cimdr/static/img/img5.c8f2dd8.jpg' },
+        { url: 'http://www.cimdr.com/cimdr/static/img/img10.3ac5ed5.jpg' },
+        { url: 'http://www.cimdr.com/cimdr/static/img/img4.ea28bae.jpg' },
+        { url: 'http://www.cimdr.com/cimdr/static/img/img8.71498b4.jpg' },
+        { url: 'http://www.cimdr.com/cimdr/static/img/img2.00ef986.jpg' },
+        { url: 'http://www.cimdr.com/cimdr/static/img/img5.c8f2dd8.jpg' },
+        { url: 'http://www.cimdr.com/cimdr/static/img/img10.3ac5ed5.jpg' },
+        { url: 'http://www.cimdr.com/cimdr/static/img/img4.ea28bae.jpg' },
+        { url: 'http://www.cimdr.com/cimdr/static/img/img8.71498b4.jpg' }
+      ]
     }
   },
   mounted () {
@@ -71,6 +100,13 @@ export default {
     newsDate () {
       return function (i) {
         return date.formatDate(i, 'YYYY.MM.DD')
+      }
+    },
+    optionLeft () {
+      return {
+        direction: 2,
+        step: 1,
+        hoverStop: false
       }
     }
   },
@@ -202,5 +238,33 @@ export default {
 .carousel-wrap {
   width: 1280px;
   height: 180px;
+}
+
+.seamless-warp {
+  width: 1280px;
+  height: 180px;
+  overflow: hidden;
+
+  ul.item {
+    width: 1560px;
+    height: 180px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+    .scroll-li {
+      width: 146px;
+      height: 180px;
+      padding: 0;
+      margin: 0;
+      margin-right: 10px;
+
+      .scroll-img {
+        width: 146px;
+        height: 180px;
+      }
+    }
+  }
 }
 </style>

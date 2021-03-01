@@ -17,7 +17,8 @@
     "quasar": "^1.0.0",
     "swiper": "^5.4.5",
     "vue-animejs": "^2.1.1",
-    "vue-awesome-swiper": "^4.1.1"
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-seamless-scroll": "^1.1.23"
   },
   "devDependencies": {
     "@quasar/app": "^2.0.0",
