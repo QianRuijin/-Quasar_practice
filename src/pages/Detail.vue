@@ -68,6 +68,7 @@
         </p>
         <p><br /></p>
         <div id="qrCode" ref="qrCodeDiv"></div>
+        <q-icon name="img:data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' height='140' width='500'><ellipse cx='200' cy='80' rx='100' ry='50' style='fill:yellow;stroke:purple;stroke-width:2' /></svg>" />
       </div>
       <div class="info-wrap column">
         <div class="info-title">第十一届<br />中国医疗器械监督管理国际会议</div>
@@ -123,6 +124,10 @@ export default {
         correctLevel: QRCode.CorrectLevel.L // 容错率，L/M/H
       })
     }, 100)
+
+    console.log(this.$q.screen.name)
+    console.log(this.$q.screen.xs)
+    console.log(this.$q.screen.md)
   },
   methods: {
     loadData () {
